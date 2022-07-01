@@ -4,7 +4,7 @@ let container = document.body.querySelector( "#container" );
 let counter = document.body.querySelector( "#counter" );
 
 container.addEventListener( "click", buttonEvent );
-container.onmousedown = function () { return false };
+container.onpointerdown = function () { return false };
 
 function buttonEvent( e ) {
 	let button = e.target;
