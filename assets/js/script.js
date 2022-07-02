@@ -2,9 +2,24 @@
 
 let container = document.body.querySelector( "#container" );
 let counter = document.body.querySelector( "#counter" );
+let firstTime = null;
 
-container.addEventListener( "pointerdown", function(e) { e.preventDefault() } );
-container.addEventListener( "click", buttonEvent );
+container.addEventListener( "pointerdown", pointerControl );
+
+function pointerControl(e){
+	e.preventDefault();
+
+	if( firstTime ) return;
+
+	if ( e.pointerType === "mouse" ) {
+		container.addEventListener( "click", buttonEvent );
+		firstTime = true;
+	}
+	else if ( e.pointerType === "touch" ) {
+		container.addEventListener( "touchstart", buttonEvent );
+		firstTime = true;
+	}
+}
 
 function buttonEvent( e ) {	
 
