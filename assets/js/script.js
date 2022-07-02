@@ -44,16 +44,21 @@ function buttonEvent( e ) {
 	
 	function increase (counter) {
 		let result = Number( counter.textContent );
-		counter.textContent = ++result;
+		result++;
+		setCounter( result );
 	}
 
 	function decrease (counter) {
 		let result = Number( counter.textContent );
 		result--;
 		if ( result >= 0 ) {
-			counter.textContent = result;
+			setCounter( result );
 		}
 		
 	}	
+
+	function setCounter( res ) {
+		counter.textContent = res;
+	}
 	
 }
