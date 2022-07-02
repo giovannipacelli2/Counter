@@ -3,11 +3,14 @@
 let container = document.body.querySelector( "#container" );
 let counter = document.body.querySelector( "#counter" );
 
+container.addEventListener( "pointerdown", function(e) { e.preventDefault() } );
 container.addEventListener( "click", buttonEvent );
-container.onpointerdown = function () { return false };
 
-function buttonEvent( e ) {
-	let button = e.target;
+function buttonEvent( e ) {	
+
+	let button = e.target.closest(".BUTTON");
+
+	e.preventDefault();
 
 	check(button, counter);
 
@@ -36,9 +39,6 @@ function buttonEvent( e ) {
 			counter.textContent = result;
 		}
 		
-	}
-	
-	e.preventDefault();
-	
+	}	
 	
 }
