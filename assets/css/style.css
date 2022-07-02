@@ -12,20 +12,40 @@ body {
 	border: 1px solid
 }
 
+.page {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 20px;
+
+	background-color: #edededb9;
+}
+
+#head {
+	text-align: center;
+	font-size: 1.5em;
+	color: rgb(110, 7, 7);
+}
+
 #container {
-	margin: 10px;
-	padding: 10px;
+	padding: 20px;
 	width: 80%;
 	height:250px;
 
-	margin: 10px auto;
+	margin: 30px auto;
 	
 	display:flex;
 	flex-direction: column;
-	align-items: center;
+	/*align-items: center;*/
 	
-	border: 2px solid rgb(0, 74, 31);
+	border: 2px solid rgb(34, 3, 3);
 	border-radius: 5px;
+
+	background-color: #f8f8f8;
+	background-image: url("../img/Fire2.png");
+	background-size: 300px;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 #counter {
@@ -33,7 +53,8 @@ body {
 	font-size: 5em;
 	text-align:center;
 	
-	color: rgb(79, 157, 164);
+	color: rgb(110, 7, 7);
+	font-weight: 500;
 	width:100%;
 }
 
@@ -41,6 +62,7 @@ body {
 	height: 196px;
 	display: flex;
 	flex-direction: column;
+
 }
 
 #button-container {
@@ -56,11 +78,12 @@ body {
 }
 
 .button {
-	border: 2px solid rgb(16, 112, 136);
+	border: 2px solid rgb(110, 7, 7);
 	border-radius: 5px;
 	
 	font-size:3em;
-	color: rgb(39, 79, 66);
+	color: rgb(110, 7, 7);
+	background-color: #f8f8f8;
 
 	display: flex;
 	flex-direction: row;
@@ -74,9 +97,6 @@ body {
 }
 
 .reset {
-	font-size:3em;
-	color: rgb(39, 79, 66);
-
 	cursor: pointer;
 
 	display: flex;
@@ -93,20 +113,22 @@ body {
 
 .reset img:hover {
 	border-radius: 5px;
-	background-color: rgba(255, 0, 0, 0.248);
+	background-color: rgba(110, 7, 7, 0.453);
 
 }
 
 .button:hover {
-	border: 3px solid rgb(79, 157, 164);
-
-	color: rgb(79, 162, 136);
-
+	border: 3px solid #eed754;
 }
 
 /*************/
 
 @media only screen and (min-width: 350px) {
+
+	.page {
+		width: 80%;
+	}
+
 	#container {
 		width: 300px;
 	}
