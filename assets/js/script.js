@@ -23,7 +23,7 @@ function pointerControl(e){
 
 function buttonEvent( e ) {	
 
-	let button = e.target.closest(".BUTTON");
+	let button = e.target.closest(".set-counter");
 
 	e.preventDefault();
 
@@ -31,13 +31,17 @@ function buttonEvent( e ) {
 
 	function check (button, counter) {
 		if (!button) return;
-		if (!button.classList.contains("button")) return;
+		if (!button.classList.contains("set-counter")) return;
 
 		if ( button.id === "increase" ) {
 			increase(counter);
 		}
 		if ( button.id === "decrease" ) {
 			decrease(counter);
+		}
+
+		if ( button.id === "reset" ) {
+			reset(counter);
 		}
 
 	}
@@ -54,8 +58,11 @@ function buttonEvent( e ) {
 		if ( result >= 0 ) {
 			setCounter( result );
 		}
-		
 	}	
+
+	function reset (counter) {
+		setCounter( "0" );
+	}
 
 	function setCounter( res ) {
 		counter.textContent = res;
