@@ -18,7 +18,10 @@ body {
 	margin: 0 auto;
 	padding-top: 20px;
 
-	background-color: #edededb9;
+	background-color: #ca843981;
+
+	/*background-color: #cd771b56;*/
+	/*background-color: #edededb9;*/
 }
 
 #head {
@@ -40,6 +43,7 @@ body {
 	
 	border: 2px solid rgb(34, 3, 3);
 	border-radius: 5px;
+	box-shadow: 0px 8px 12px rgb(34, 3, 3);
 
 	background-color: #f8f8f8;
 	background-image: url("../img/Fire2.png");
