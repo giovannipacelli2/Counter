@@ -18,10 +18,8 @@ body {
 	margin: 0 auto;
 	padding-top: 20px;
 
-	background-color: #ca843981;
-
-	/*background-color: #cd771b56;*/
-	/*background-color: #edededb9;*/
+	background-color: #f7e05f68;
+	box-shadow: 0 0 10px #9d8e35;
 }
 
 #head {
