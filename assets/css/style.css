@@ -117,10 +117,6 @@ body {
 
 }
 
-.button:hover {
-	border: 3px solid #eed754;
-}
-
 /*************/
 
 @media only screen and (min-width: 390px) {
@@ -131,5 +127,9 @@ body {
 
 	#container {
 		width: 300px;
+	}
+
+	.button:hover {
+		border: 3px solid #eed754;
 	}
 }
