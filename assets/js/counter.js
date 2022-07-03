@@ -13,11 +13,11 @@ function pointerControl(e){
 
 	if ( e.pointerType === "mouse" ) {
 		container.addEventListener( "click", buttonEvent );
-		firstTime = true;
+		/*firstTime = true;*/
 	}
 	else if ( e.pointerType === "touch" ) {
 		container.addEventListener( "touchstart", buttonEvent );
-		firstTime = true;
+		/*firstTime = true;*/
 	}
 }
 
