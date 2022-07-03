@@ -2,14 +2,14 @@
 
 let container = document.body.querySelector( "#container" );
 let counter = document.body.querySelector( "#counter" );
-let firstTime = null;
+/*let firstTime = null;*/
 
 container.addEventListener( "pointerdown", pointerControl );
 
 function pointerControl(e){
 	e.preventDefault();
 
-	if( firstTime ) return;
+	/*if( firstTime ) return;*/
 
 	if ( e.pointerType === "mouse" ) {
 		container.addEventListener( "click", buttonEvent );
