@@ -15,7 +15,7 @@
 
 ## **Organizzazione dei file:** 
 #### - Nella _root_ è presente il file **index.html** ( _homepage_ ).
-#### - Nella cartella "**assets**" si trovano altre sotto cartelle con i fogli di stile, file JavaScript, immagini e presentazione.
+#### - Nella cartella "**assets**" si trovano altre sottocartelle con i fogli di stile, file JavaScript, immagini e presentazione.
 
 ---
 
