@@ -25,8 +25,11 @@
 
 ## **Organizzazione dei file:**
 #### - File **counter.js** che contiene tutte le funzioni principali di incremento, decremento, reset e un controllo sul tipo di _pointer_.
-### - File **screen.js** che contiene dei _listener_ su _window_ che offrono degli aggiusti a livello grafico impostando il fine pagina quando la dimensione della finestra cambia.
+
+#### - File **screen.js** che contiene dei _listener_ su _window_ che offrono degli aggiusti a livello grafico impostando il fine pagina quando la dimensione della finestra cambia.
 
 ---
 
 ## **Screenshot dell'app:**
+
+![](https://giovannipacelli2.github.io/counter/assets/presentation/img/counter_1.jpg)
