@@ -30,7 +30,7 @@
 
 ## **Organizzazione dei file:**
 ### - File **counter.js** 
-- contiene tutte le funzioni principali di incremento, decremento, reset e un controllo sul tipo di _pointer_.
+- contiene tutte le funzioni principali di incremento, decremento e reset.
 
 ### - File **screen.js** 
 - contiene dei _listener_ su _window_ che offrono degli aggiusti a livello grafico impostando il fine pagina quando la dimensione della finestra cambia.
