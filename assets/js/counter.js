@@ -4,22 +4,12 @@ let container = document.body.querySelector( "#container" );
 let counter = document.body.querySelector( "#counter" );
 /*let firstTime = null;*/
 
-container.addEventListener( "pointerdown", pointerControl );
+container.addEventListener( "pointerdown", function(e){ e.preventDefault() } );
 
-function pointerControl(e){
-	e.preventDefault();
+container.addEventListener( "click", buttonEvent );
 
-	/*if( firstTime ) return;*/
 
-	if ( e.pointerType === "mouse" ) {
-		container.addEventListener( "click", buttonEvent );
-		/*firstTime = true;*/
-	}
-	else if ( e.pointerType === "touch" ) {
-		container.addEventListener( "touchstart", buttonEvent );
-		/*firstTime = true;*/
-	}
-}
+
 
 function buttonEvent( e ) {	
 
@@ -49,22 +39,22 @@ function buttonEvent( e ) {
 	function increase (counter) {
 		let result = Number( counter.textContent );
 		result++;
-		setCounter( result );
+		setCounter( counter, result );
 	}
 
 	function decrease (counter) {
 		let result = Number( counter.textContent );
 		result--;
 		if ( result >= 0 ) {
-			setCounter( result );
+			setCounter( counter, result );
 		}
 	}	
 
 	function reset (counter) {
-		setCounter( "0" );
+		setCounter( counter, "0" );
 	}
 
-	function setCounter( res ) {
+	function setCounter( counter, res ) {
 		counter.textContent = res;
 	}
 	
